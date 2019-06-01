@@ -162,10 +162,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
    H4K3RWebb
    
-# DSPManager
-PRODUCT_PACKAGES += \
-    DSPManager
-
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
