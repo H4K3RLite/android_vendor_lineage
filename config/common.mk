@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/50-lineage.sh:system/addon.d/50-lineage.sh \
     vendor/lineage/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-ifeq ($(AB_OTA_UPDATER),true)
+ifeq ($(AB_OTA_UPDATER),false)
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/lineage/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
@@ -139,11 +139,8 @@ PRODUCT_PACKAGES += \
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-=======
     AudioFX \
     Backgrounds \
->>>>>>> 5ee35ea3568b4807e012c60cf6ef8c25d8ddb5fc
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
@@ -151,7 +148,6 @@ PRODUCT_PACKAGES += \
     Jelly \
     LockClock \
     TrebuchetQuickStep \
-<<<<<<< HEAD
     WallpaperPicker \
     WeatherProvider \
     PdfViewer \
@@ -162,11 +158,7 @@ PRODUCT_PACKAGES += \
     
 # H4K3R Wallpaper App
 PRODUCT_PACKAGES += \
-   H4K3RWalls
-=======
-    Updater \
-    WeatherProvider
->>>>>>> 5ee35ea3568b4807e012c60cf6ef8c25d8ddb5fc
+   H4K3RWalls \
 
 # H4K3R WWW App
 PRODUCT_PACKAGES += \
