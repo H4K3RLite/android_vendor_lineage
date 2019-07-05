@@ -98,7 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/lineage-power-whitelist.xml:system/etc/sysconfig/lineage-power-whitelist.xml
 
 # Include AOSP audio files
-include vendor/lineage/config/aosp_audio.mk
+# include vendor/lineage/config/aosp_audio.mk
 
 # Include Lineage audio files
 include vendor/lineage/config/lineage_audio.mk
@@ -135,26 +135,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhotoTable \
-    Terminal
 
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
-    AudioFX \
     Backgrounds \
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
-    ExactCalculator \
     Jelly \
     LockClock \
     TrebuchetQuickStep \
     WallpaperPicker \
     WeatherProvider \
-    PdfViewer \
-    KernelAdiutor \
-    Terminal \
-    OmniSwitch \
-    OmniJaws
     
 # H4K3R Wallpaper App
 PRODUCT_PACKAGES += \
@@ -244,13 +236,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-# These packages are excluded from user builds
-PRODUCT_PACKAGES_DEBUG += \
-    micro_bench \
-    procmem \
-    procrank \
-    strace
-
 # Conditionally build in su
 ifneq ($(TARGET_BUILD_VARIANT),user)
 ifeq ($(WITH_SU),true)
@@ -301,8 +286,8 @@ endif
 endif
 
 
-PRODUCT_VERSION_MAJOR = H4K3ROM--PIE
-PRODUCT_VERSION_MAJOR = H4K3ROM-PIE
+PRODUCT_VERSION_MAJOR = H4K3RLite--PIE
+PRODUCT_VERSION_MAJOR = H4K3Lite-PIE
 PRODUCT_VERSION_MINOR = 0.0
 PRODUCT_VERSION_MAINTENANCE := 0.0
 
