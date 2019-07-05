@@ -19,16 +19,6 @@ LOCAL_PATH := $(call my-dir)
 #
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := KernelAdiutor
-LOCAL_SRC_FILES := common/app/com.nhellfire.kerneladiutor_248.apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_TAGS := optional
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := H4K3RWebb
 LOCAL_SRC_FILES := common/app/app-release.apk
 LOCAL_MODULE_TAGS := optional
